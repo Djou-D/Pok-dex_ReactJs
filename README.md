@@ -1,3 +1,31 @@
+
+# Projeto em desenvolvimento
+
+- Iniciado 4 de junho de 2022
+- Minha primeira experiência com React js 
+
+
+# Iniciando criação do projeto React com create react app
+
+- npx create-react-app pokedex-react
+
+# Dando start no projeto
+
+- npm start
+
+# instalando dependencias
+
+## Componente de estilização styled-components
+
+npm install --save styled-components
+
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
