@@ -176,7 +176,7 @@ export const Container = styled.section`
 
   @media screen and (min-width: 1440px) and (max-width: 2559px){
     display: flex;
-    
+    height: 100vh;
     .header
     {
         width: 220%;
@@ -187,8 +187,9 @@ export const Container = styled.section`
         width: 100%;
         padding: 10px 15px;
         display: flex;
-        justify-content: space-between;
-        align-items: center;
+        flex-direction: column;
+        gap: 2rem;
+        align-items: flex-start;
         
         h3
         {
@@ -203,10 +204,14 @@ export const Container = styled.section`
 
     .type
     {
+        width: 100%;
+        height: 80%;
         padding: 5px;
         display: flex;
-        justify-content: space-evenly;
-        gap: 1rem;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: flex-end;
+        gap: 2rem;
         
         p
         {
@@ -230,7 +235,7 @@ export const Container = styled.section`
         {
             width: 600px;
             position: absolute;
-            top: 25%;
+            top: 15%;
             z-index: 10;
         }
     }
@@ -250,8 +255,9 @@ export const Container = styled.section`
         width: 100%;
         padding: 10px 15px;
         display: flex;
-        justify-content: space-evenly;
-        align-items: center;
+        flex-direction: column;
+        gap: 2rem;
+        align-items: flex-start;
         
         h3
         {
@@ -266,18 +272,23 @@ export const Container = styled.section`
 
     .type
     {
+        width: 100%;
+        height: 80%;
         padding: 5px;
         display: flex;
-        justify-content: space-around;
-        gap: 1rem;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: flex-end;
+        gap: 2rem;
         
         p
         {
+            width: 100px;
+            text-align: center;
             background: rgba(255,255,255, 0.25);
             padding: 5px;
             border-radius: 10px;
             font-size: 1.7rem;
-            
         }
     }
 
@@ -456,7 +467,7 @@ export const Close = styled.button`
         transform: rotate(-45deg);
     }
 
-    @media screen and (min-width: 1440px) {
+    @media screen and (min-width: 1024px) {
         cursor: pointer;
         background-color: transparent;
         outline: none;
@@ -468,6 +479,7 @@ export const Close = styled.button`
         top: -25px;
         display: flex;
     }
+
 
 `;
 
@@ -506,9 +518,25 @@ export const Content = styled.div`
             align-items: center;
             text-align: center;
 
+            div
+            {
+                width: 32%;
+            }
+            
+            div:nth-child(2)
+            {
+                border-left: 2px solid #E0E0E0;
+                border-right: 2px solid #E0E0E0;
+            }
+
             p
             {
                 font-size: 1.2rem;
+
+                i
+                {
+                    font-size: .8rem;
+                }
             }
 
             small
@@ -516,6 +544,7 @@ export const Content = styled.div`
                 font-size: .8rem;
             }
         }
+
 
         .features
         {
@@ -533,6 +562,16 @@ export const Content = styled.div`
             {
                 padding: 10px;
                 font-size: 1.2rem;
+            }
+
+            .mars i
+            {
+                color: #287DFC;
+            }
+
+            .venus i
+            {
+                color: #E85382;
             }
 
             div
@@ -691,6 +730,7 @@ export const Content = styled.div`
 
     @media screen and (min-width: 1024px) and (max-width: 1439px) {
         width: 100%;
+            
     }
 
 

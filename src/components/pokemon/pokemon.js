@@ -121,11 +121,11 @@ const Pokemon = (props) => {
             </div>
             <section className="info">
               <div>
-                <p>{pokemon.weight / 10}</p>
+                <p><i class="fa fa-anchor" aria-hidden="true"></i> {pokemon.weight / 10}</p>
                 <small>Peso</small>
               </div>
               <div>
-                <p>{pokemon.height / 10}</p>
+                <p><i class="fa fa-arrows-v" aria-hidden="true"></i> {pokemon.height / 10}</p>
                 <small>Altura</small>
               </div>
               <div>
@@ -135,7 +135,15 @@ const Pokemon = (props) => {
             </section>
             <section className="features">
               <h3>Características</h3>
-              <p>Gênero: M F</p>
+              <div>
+                <div className="statsTitle">
+                  <p>Gênero</p>
+                </div>
+                <div className="statsValue">
+                <p className="mars"><i class="fa fa-mars" aria-hidden="true"></i></p>
+                </div>
+                <p className="venus"><i class="fa fa-venus" aria-hidden="true"></i></p>
+              </div>
               <div>
                 <div className="statsTitle">
                   <p>Saúde</p>
@@ -200,7 +208,7 @@ const Pokemon = (props) => {
                 <Progress progress={totalFeature} />
               </div>
             </section>
-            <section className="description2">
+            {/* <section className="description2">
               <h3>Pontos fortes e fracos</h3>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -211,7 +219,7 @@ const Pokemon = (props) => {
                 nulla pariatur. Excepteur sint occaecat cupidatat non proident,
                 sunt in culpa qui officia deserunt mollit anim id est laborum.
               </p>
-            </section>
+            </section> */}
           </section>
           </Container>
         </InfoModal>
