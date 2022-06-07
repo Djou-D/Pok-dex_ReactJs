@@ -5,6 +5,8 @@ import * as S from "./styled";
 
 import InfoModal from "../modal/infoModal";
 import Progress from "../progress_bar/progress";
+import { Container } from "../modal/styled";
+
 
 
 const Pokemon = (props) => {
@@ -21,12 +23,16 @@ const Pokemon = (props) => {
     (type) => type.type.name[0].toUpperCase() + type.type.name.slice(1)
   );
 
+  const overflow = document.getElementById('root');
   const openModal = () => {
     setIsModal(true);
+    overflow.classList.add('overflow');
   };
 
   const closeModal = () => {
     setIsModal(false);
+    overflow.classList.remove('overflow');
+
   }
 
   //calculando o valor total das abilidade do pokémons
@@ -47,7 +53,7 @@ const Pokemon = (props) => {
 
   return (
     <>
-      <S.Card className={pokemonType[0]}>
+      <S.Card  className={pokemonType[0]}>
         <S.CardBody>
           <S.Header>
             <h3>{pokemon.name}</h3>
@@ -84,15 +90,15 @@ const Pokemon = (props) => {
       {isModal ? (
         <InfoModal onClose={closeModal}>
           {/* Iniciando estrutura do modal */}
-          <section className={pokemonType[0]}>
+          <Container className={pokemonType[0]}>
             <div className="header">
               <div className="name">
                 <h3>{pokemon.name}</h3>
-                <h3>#{id}</h3>
+                <p>#{id}</p>
               </div>
               <div className="type">
                 {pokemon.types.map((type, index) => {
-                  return <div key={index}>{type.type.name}</div>;
+                  return <p key={index}>{type.type.name}</p>;
                 })}
               </div>
               <div className="image">
@@ -102,7 +108,7 @@ const Pokemon = (props) => {
                 />
               </div>
             </div>
-          </section>
+          
           <section className="boty">
             <div className="description">
               <h3>Descrição</h3>
@@ -207,6 +213,7 @@ const Pokemon = (props) => {
               </p>
             </section>
           </section>
+          </Container>
         </InfoModal>
       ) : null}
     </>

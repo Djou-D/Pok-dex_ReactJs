@@ -4,7 +4,7 @@ import styled from "styled-components"
 export const Card = styled.div`
 
   width: 350px;
-  height: 250px;
+  height: 220px;
   background: #ecf0f1;
   color: #fff;
   padding: 1rem;
@@ -131,7 +131,7 @@ export const Center = styled.section`
 
     display: flex;
     align-items: center;
-    height: 150px;
+    height: 120px;
 
     div:nth-child(1)
     {   
@@ -151,7 +151,7 @@ export const Center = styled.section`
     {
         position: absolute;
         top: 25%;
-        left: 50%;
+        left: 40%;
         width: 120px;
         cursor: pointer;
     }
@@ -164,4 +164,11 @@ export const CardFooter = styled.footer`
     justify-content: space-between;
     align-items: center;
 
+    span
+    {
+      padding: 10px;
+      border-radius: 20px;
+      background: rgba(255,255,255, 0.25);
+    }
+  
 `;

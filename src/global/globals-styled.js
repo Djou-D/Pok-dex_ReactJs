@@ -12,15 +12,15 @@ export default createGlobalStyle`
 
 body 
 {
-    font-family: 'Press Start 2P', cursive;
+    /* font-family: 'Press Start 2P', cursive; */
+    font-size: 'inter';
     -webkit-font-smoothing: antialiased !important;
 }
 
 body, html, #root 
 {
     height: 100%;
-    /* overflow-x: hidden; */
-    
 }
+
 
 `
