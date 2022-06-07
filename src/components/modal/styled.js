@@ -123,8 +123,9 @@ export const Container = styled.section`
         width: 100%;
         padding: 10px 15px;
         display: flex;
-        justify-content: space-between;
-        align-items: center;
+        flex-direction: column;
+        gap: 2rem;
+        align-items: flex-start;
         
         h3
         {
@@ -139,17 +140,24 @@ export const Container = styled.section`
 
     .type
     {
+        width: 100%;
+        height: 80%;
         padding: 5px;
         display: flex;
-        justify-content: space-evenly;
-        /* gap: 1rem; */
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: flex-end;
+        gap: 2rem;
         
         p
         {
+            width: 100px;
+            text-align: center;
             background: rgba(255,255,255, 0.25);
             padding: 5px;
             border-radius: 10px;
-            font-size: 2rem;
+            font-size: 1.7rem;
+            margin-right: 10px;
             
         }
     }
@@ -215,10 +223,13 @@ export const Container = styled.section`
         
         p
         {
+            width: 100px;
+            text-align: center;
             background: rgba(255,255,255, 0.25);
             padding: 5px;
             border-radius: 10px;
             font-size: 1.7rem;
+            margin-right: 10px;
             
         }
     }
@@ -289,6 +300,7 @@ export const Container = styled.section`
             padding: 5px;
             border-radius: 10px;
             font-size: 1.7rem;
+            margin-right: 10px;
         }
     }
 
