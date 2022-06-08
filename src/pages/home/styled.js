@@ -254,9 +254,10 @@ export const Section = styled.div`
             display: flex;
             justify-content: center;
             align-items: center;
-            position: absolute;
-            top: 60%;
+            position: relative;
+            top: 0;
             right: 10%;
+            
 
             img
         {
