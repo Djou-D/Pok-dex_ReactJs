@@ -455,6 +455,7 @@ export const Close = styled.button`
     right: -50%;
     top: 5px;
     display: flex;
+    padding: ${props => props.theme.padding.pad_4};
 
     &:before,
     &:after

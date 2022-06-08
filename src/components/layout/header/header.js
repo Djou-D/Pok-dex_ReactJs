@@ -13,9 +13,10 @@ const Header = () => {
         <h1>
           Olá, <b>Ash Ketchum</b>
         </h1>
-        <Link className="home" to="/">
+        <p>
           Bem Vindo!
-        </Link>
+        </p>
+        <Link className="home" to="/"><i class="fa fa-home" aria-hidden="true"></i></Link>
       </S.BoasVindas>
 
       <S.imgPerfil>

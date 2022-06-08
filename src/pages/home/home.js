@@ -19,7 +19,7 @@ const Home = () => {
           </Link>
         </div>
         <div>
-          <Link className="safari" to="/safari">
+          <Link className="safari" to="/sobre">
             Sobre
           </Link>
         </div>

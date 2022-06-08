@@ -20,6 +20,7 @@ export const Container = styled.nav`
 export const BoasVindas = styled.div`
 
     padding: ${props => props.theme.padding.pad_4};
+    line-height: 30px;
 
     h1
     {
@@ -28,20 +29,22 @@ export const BoasVindas = styled.div`
         font-family: ${props => props.theme.font_family.primary};
     }
 
-    .home
+    p
     {
         font-size: ${props => props.theme.font_size.size_5};
         color: ${props => props.theme.colors.textPrimary};
         letter-spacing: 1px;
-        text-decoration: none;
-        overflow: hidden;
-        transition: 0.5s;
     }
 
-    &:hover .home
+    .home
     {
-        letter-spacing: 3px;
+        font-size: ${props => props.theme.font_size.size_5};
+        color: ${props => props.theme.colors.textPrimary};
+        padding: ${props => props.theme.padding.pad_3};
+        margin-top: ${props => props.theme.margin.top};
+        text-decoration: none;
     }
+
 
 `;
 

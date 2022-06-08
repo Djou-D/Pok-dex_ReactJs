@@ -27,7 +27,7 @@ Desenvolver uma plataforma web com o objetivo de listar e visualizar os fantást
  
  * Controle de paginação na listagem dos pokémons e filtro por nome.
 
- * Criação de rotas para acesso entre a pagina home e a pokédex.
+ * Criação de rotas para acesso entre a pagina home a pagina sobre e a pokédex.
 
  * Uso do Themes com o ThemeProviders para criação de variaveis de estilização.
 
