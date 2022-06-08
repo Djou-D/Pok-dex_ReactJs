@@ -5,15 +5,15 @@ Desenvolver uma plataforma web com o objetivo de listar e visualizar os fantást
 
 
 ## Funcionalidades
- 1.Listagem dos Pokémons.  
+ 1. Listagem dos Pokémons.  
 
- 2.Buscas por Pokémons específicos.  
+ 2. Buscas por Pokémons específicos.  
 
- 3.Paginação na busca por Pokémons.
+ 3. Paginação na busca por Pokémons.
 
- 4.Captura dos seus Pokémons favoritos.
+ 4. Captura dos seus Pokémons favoritos.
 
- 5.Listagem dos dados do Pokémon, com um click sobre sua imagem.  
+ 5. Listagem dos dados do Pokémon, com um click sobre sua imagem.  
 
 
 ## Conceitos abordados 
