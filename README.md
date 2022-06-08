@@ -1,30 +1,42 @@
 
-# Projeto em desenvolvimento
+## PROJETO  
 
-- Minha primeira experiência com React js. 
-- Contrução de uma pokedex.
-
-
-# Iniciando criação do projeto React com create react app
-
-- npx create-react-app pokedex-react
-
-# Dando start no projeto
-
-- npm start
-
-# instalando dependencias
-
-## react-router-dom para o gerenciamento de rotas
-
-- npm install react-router-dom
-
-## Componente de estilização styled-components
-
-- npm install --save styled-components
+Desenvolver uma plataforma web com o objetivo de listar e visualizar os fantásticos monstrinhos do mundo Pokémon, a base desse projeto foi construida em React JS e os dados sobre os pokémons foram absorvidos da PokéApi, uma API REST de gerenciamento de GETs.
 
 
+## Funcionalidades
+ 1.Listagem dos Pokémons.  
 
+ 2.Buscas por Pokémons específicos.  
+
+ 3.Paginação na busca por Pokémons.
+
+ 4.Captura dos seus Pokémons favoritos.
+
+ 5.Listagem dos dados do Pokémon, com um click sobre sua imagem.  
+
+
+## Conceitos abordados 
+ *Consumo de api com o uso do fetch javascript.
+
+ *Estilização dos componentes com styled components 
+ 
+ *Uso de flexbox para alinhar e ajustar elementos na página.
+
+ *Uso do media Queries para responsividade da aplicação
+ 
+ *Controle de paginação na listagem dos pokémons e filtro por nome.
+
+ *Criação de rotas para acesso entre a pagina home e a pokédex.
+
+ *Uso do Themes com o ThemeProviders para criação de variaveis de estilização.
+
+
+## Tecnologias
+*React
+*Styled-components
+*React Router
+*javaScript
 
 
 
