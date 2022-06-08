@@ -425,12 +425,9 @@ export const Container = styled.section`
 
     .image
     {
-        width: 100%;
         display: flex;
         justify-content: center;
-        align-items: center;
         
-
         img
         {
             width: 180px;

@@ -6,6 +6,7 @@ export const Container = styled.nav`
     height: 150px;
     border-radius: ${props => props.theme.border.radius_3};
     background: ${props => props.theme.colors.primary};
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.2);
     display: flex;
     justify-content: space-between;
     align-items: center;

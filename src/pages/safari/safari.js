@@ -91,33 +91,31 @@ const Safari = () => {
   };
 
   return (
-    
-      <CatcherProvider
-        value={{
-          catchPokemons: catche,
-          updateCatchPokemons: updateCatchPokemons,
-        }}
-      >
-        <>
-          <Header />
-          <Search onSearch={onSearchHandler} />
-          {notFound ? (
-            <ContainerNotFound>
-              <p>Huuum! Esse não passou por aqui!</p>
-            </ContainerNotFound>
-          ) : (
-            <Pokedex
-              pokemons={pokemons}
-              loading={loading}
-              page={page}
-              setPage={setPage}
-              totalPage={totalPage}
-            />
-          )}
-        </>
-        <Footer />
-      </CatcherProvider>
-    
+    <CatcherProvider
+      value={{
+        catchPokemons: catche,
+        updateCatchPokemons: updateCatchPokemons,
+      }}
+    >
+      <>
+        <Header />
+        <Search onSearch={onSearchHandler} />
+        {notFound ? (
+          <ContainerNotFound>
+            <p>Huuum! Esse não passou por aqui!</p>
+          </ContainerNotFound>
+        ) : (
+          <Pokedex
+            pokemons={pokemons}
+            loading={loading}
+            page={page}
+            setPage={setPage}
+            totalPage={totalPage}
+          />
+        )}
+      </>
+      <Footer />
+    </CatcherProvider>
   );
 };
 
