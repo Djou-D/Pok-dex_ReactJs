@@ -2,11 +2,12 @@ import React from "react";
 import { Container, Content } from "./styled";
 
 
-const Progress = ({progress}) => {
+const Progress = ({bgColor, progress}) => {
 
 
     const content = {
         width: `${progress}%`,
+        background: bgColor,
     }
 
     return (

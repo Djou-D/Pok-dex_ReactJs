@@ -14,6 +14,7 @@ body
 {
     /* font-family: 'Press Start 2P', cursive; */
     font-size: 'inter';
+    background: ${props => props.theme.colors.background};
     -webkit-font-smoothing: antialiased !important;
 }
 

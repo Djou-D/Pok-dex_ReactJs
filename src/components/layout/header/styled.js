@@ -4,13 +4,13 @@ export const Container = styled.nav`
 
     width: 100%;
     height: 150px;
-    border-radius: 0 0 25px 25px;
-    background: #494949;
+    border-radius: ${props => props.theme.border.radius_3};
+    background: ${props => props.theme.colors.primary};
     display: flex;
     justify-content: space-between;
     align-items: center;
     overflow: hidden;
-    color: #fff; //criar variavel
+    color: ${props => props.theme.colors.textPrimary};
     
 
 `;
@@ -18,18 +18,28 @@ export const Container = styled.nav`
 
 export const BoasVindas = styled.div`
 
-    padding: 10px;
+    padding: ${props => props.theme.padding.pad_4};
 
     h1
     {
-        font-size: 1.6rem;
+        font-size: ${props => props.theme.font_size.size_3};
         font-weight: 300;
-        font-family: 'Inter';
+        font-family: ${props => props.theme.font_family.primary};
     }
 
-    span
+    .home
     {
-        font-size: 1rem;
+        font-size: ${props => props.theme.font_size.size_5};
+        color: ${props => props.theme.colors.textPrimary};
+        letter-spacing: 1px;
+        text-decoration: none;
+        overflow: hidden;
+        transition: 0.5s;
+    }
+
+    &:hover .home
+    {
+        letter-spacing: 3px;
     }
 
 `;
@@ -96,5 +106,7 @@ export const imgPerfil = styled.div`
             z-index: 10;
         }
     }
+
+    
     
 `;

@@ -1,8 +1,8 @@
 
 # Projeto em desenvolvimento
 
-- Iniciado 4 de junho de 2022
-- Minha primeira experiência com React js 
+- Minha primeira experiência com React js. 
+- Contrução de uma pokedex.
 
 
 # Iniciando criação do projeto React com create react app
@@ -15,9 +15,13 @@
 
 # instalando dependencias
 
+## react-router-dom para o gerenciamento de rotas
+
+- npm install react-router-dom
+
 ## Componente de estilização styled-components
 
-npm install --save styled-components
+- npm install --save styled-components
 
 
 

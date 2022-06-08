@@ -3,8 +3,8 @@ import styled from "styled-components"
 export const Container = styled.section`
 
     width: 100%;
-    padding-bottom: 20px;
-
+    padding-bottom: ${props => props.theme.padding.pad_2};
+    
 `
 
 export const Pag = styled.nav`
@@ -12,7 +12,6 @@ export const Pag = styled.nav`
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 10px 0 10px 0;
     
 `
 

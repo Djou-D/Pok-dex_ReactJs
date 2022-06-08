@@ -3,6 +3,7 @@ import * as S from "./styled";
 import Catcher from "../../context/catcher";
 
 import ImgPerfil from "../../../assets/img/perfil.png";
+import { Link } from "react-router-dom";
 
 
 const Header = () => {
@@ -13,14 +14,13 @@ const Header = () => {
         <h1>
           Olá, <b>Ash Ketchum</b>
         </h1>
-        <span>Bem Vindo!</span>
+        <Link className="home" to="/home">Bem Vindo!</Link>
       </S.BoasVindas>
-
+  
       <S.imgPerfil>
-        <div >
+        <div>
           <p>{catchPokemons.length}</p>
-          <img alt="Imagem do perfil do usuario" src={ImgPerfil}></img>
-
+          <img  alt="Imagem do perfil do usuario" src={ImgPerfil}></img>
           <div></div>
         </div>
       </S.imgPerfil>

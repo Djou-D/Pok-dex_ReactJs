@@ -12,7 +12,6 @@ export const Content = styled.div`
 
     height: 100%;
     border-radius: 5px;
-    background: #c1c;
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -20,7 +19,7 @@ export const Content = styled.div`
     span
     {
         font-size: .4rem;
-        padding: 5px;
+        padding: ${props => props.theme.padding.pad_5};
     }
 
 

@@ -5,10 +5,9 @@ export const Card = styled.div`
 
   width: 350px;
   height: 220px;
-  background: #ecf0f1;
-  color: #fff;
-  padding: 1rem;
-  border-radius: 20px;
+  color: ${props => props.theme.colors.textPrimary};
+  padding: ${props => props.theme.padding.pad_4};
+  border-radius: ${props => props.theme.border.radius_1};
   text-align: center;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   position: relative;
@@ -112,7 +111,7 @@ export const CardBody = styled.section`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 4px;
+    padding: ${props => props.theme.padding.pad_5};
     flex: 1;
     max-width: 100%;
 
@@ -120,7 +119,7 @@ export const CardBody = styled.section`
 
 export const Header = styled.section`
 
-    padding: 2px;
+    font-size: ${props => props.theme.font_size.size_4};
     display: flex;
     justify-content: space-between;
     gap: 10px;
@@ -140,10 +139,11 @@ export const Center = styled.section`
 
         h4
         {
-          padding: 10px;
-          margin: 5px 0;
-          background: rgba(255,255,255, 0.25);
-          border-radius: 20px;
+          width: 80px;
+          padding: ${props => props.theme.padding.pad_4};
+          margin: ${props => props.theme.margin.botton_2};
+          background: ${props => props.theme.colors.secundary};
+          border-radius: ${props => props.theme.border.radius_1};
         }
     }
 
@@ -166,9 +166,9 @@ export const CardFooter = styled.footer`
 
     span
     {
-      padding: 10px;
-      border-radius: 20px;
-      background: rgba(255,255,255, 0.25);
+      padding: ${props => props.theme.padding.pad_4};
+      border-radius: ${props => props.theme.border.radius_1};
+      background: ${props => props.theme.colors.secundary};
     }
   
 `;

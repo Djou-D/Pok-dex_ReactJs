@@ -3,19 +3,19 @@ import styled from "styled-components"
 export const Modal = styled.div`
     position: absolute;
     width: 100%;
-    background: rgba(0,0,0,.8);
+    background: rgba(0, 0, 0, .8);
     top: 0;
     left: 0;
     z-index: 11;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 25px;
+    padding: ${props => props.theme.padding.pad_1};
 
 `;
 
 export const Container = styled.section`
-    border-radius: 20px 20px 20px 20px;
+    border-radius: ${props => props.theme.border.radius_1};;
 
 
   &.Normal 
@@ -121,7 +121,7 @@ export const Container = styled.section`
     .name
     {
         width: 100%;
-        padding: 10px 15px;
+        padding: ${props => props.theme.padding.pad_4};;
         display: flex;
         flex-direction: column;
         gap: 2rem;
@@ -129,12 +129,12 @@ export const Container = styled.section`
         
         h3
         {
-            font-size: 3rem;
+            font-size: ${props => props.theme.font_size.size_1};
         }
 
         p
         {
-            font-size: 2rem;
+            font-size: ${props => props.theme.font_size.size_2};
         }
     }
 
@@ -142,7 +142,7 @@ export const Container = styled.section`
     {
         width: 100%;
         height: 80%;
-        padding: 5px;
+        padding: ${props => props.theme.padding.pad_5};
         display: flex;
         flex-direction: column;
         align-items: flex-end;
@@ -153,11 +153,11 @@ export const Container = styled.section`
         {
             width: 100px;
             text-align: center;
-            background: rgba(255,255,255, 0.25);
-            padding: 5px;
-            border-radius: 10px;
-            font-size: 1.7rem;
-            margin-right: 10px;
+            background: ${props => props.theme.colors.secundary};
+            padding: ${props => props.theme.padding.pad_5};
+            border-radius: ${props => props.theme.border.radius_2};
+            font-size: ${props => props.theme.font_size.size_3};
+            margin-right: ${props => props.theme.margin.right};
             
         }
     }
@@ -193,7 +193,7 @@ export const Container = styled.section`
     .name
     {
         width: 100%;
-        padding: 10px 15px;
+        padding: ${props => props.theme.padding.pad_4};
         display: flex;
         flex-direction: column;
         gap: 2rem;
@@ -201,12 +201,12 @@ export const Container = styled.section`
         
         h3
         {
-            font-size: 2rem;
+            font-size: ${props => props.theme.font_size.size_2};
         }
 
         p
         {
-            font-size: 1.7rem;
+            font-size: ${props => props.theme.font_size.size_3};
         }
     }
 
@@ -214,7 +214,7 @@ export const Container = styled.section`
     {
         width: 100%;
         height: 80%;
-        padding: 5px;
+        padding: ${props => props.theme.padding.pad_5};
         display: flex;
         flex-direction: column;
         align-items: flex-end;
@@ -225,11 +225,11 @@ export const Container = styled.section`
         {
             width: 100px;
             text-align: center;
-            background: rgba(255,255,255, 0.25);
-            padding: 5px;
-            border-radius: 10px;
-            font-size: 1.7rem;
-            margin-right: 10px;
+            background: ${props => props.theme.colors.secundary};
+            padding: ${props => props.theme.padding.pad_5};
+            border-radius: ${props => props.theme.border.radius_2};
+            font-size: ${props => props.theme.font_size.size_3};
+            margin-right: ${props => props.theme.margin.right};
             
         }
     }
@@ -264,7 +264,7 @@ export const Container = styled.section`
     .name
     {
         width: 100%;
-        padding: 10px 15px;
+        padding: ${props => props.theme.padding.pad_4};
         display: flex;
         flex-direction: column;
         gap: 2rem;
@@ -272,12 +272,12 @@ export const Container = styled.section`
         
         h3
         {
-            font-size: 2rem;
+            font-size: ${props => props.theme.font_size.size_2};
         }
 
         p
         {
-            font-size: 1.7rem;
+            font-size: ${props => props.theme.font_size.size_3};
         }
     }
 
@@ -285,7 +285,7 @@ export const Container = styled.section`
     {
         width: 100%;
         height: 80%;
-        padding: 5px;
+        padding: ${props => props.theme.padding.pad_5};
         display: flex;
         flex-direction: column;
         align-items: flex-end;
@@ -296,11 +296,11 @@ export const Container = styled.section`
         {
             width: 100px;
             text-align: center;
-            background: rgba(255,255,255, 0.25);
-            padding: 5px;
-            border-radius: 10px;
-            font-size: 1.7rem;
-            margin-right: 10px;
+            background: ${props => props.theme.colors.secundary};
+            padding: ${props => props.theme.padding.pad_5};
+            border-radius: ${props => props.theme.border.radius_2};
+            font-size: ${props => props.theme.font_size.size_3};
+            margin-right: ${props => props.theme.margin.right};
         }
     }
 
@@ -331,34 +331,34 @@ export const Container = styled.section`
     .name
     {
         width: 100%;
-        padding: 10px 15px;
+        padding: ${props => props.theme.padding.pad_4};
         display: flex;
         justify-content: space-between;
         align-items: center;
         
         h3
         {
-            font-size: 1.5rem;
+            font-size: ${props => props.theme.font_size.size_3};
         }
 
         p
         {
-            font-size: 1.2rem;
+            font-size: ${props => props.theme.font_size.size_4};
         }
     }
 
     .type
     {
-        padding: 5px;
+        padding: ${props => props.theme.padding.pad_5};
         display: flex;
         gap: 1rem;
         
         p
         {
-            background: rgba(255,255,255, 0.25);
-            padding: 10px;
-            border-radius: 10px;
-            font-size: 1.2rem;
+            background: ${props => props.theme.colors.secundary};
+            padding: ${props => props.theme.padding.pad_4};
+            border-radius: ${props => props.theme.border.radius_2};
+            font-size: ${props => props.theme.font_size.size_4};
             
         }
     }
@@ -391,34 +391,34 @@ export const Container = styled.section`
     .name
     {
         width: 100%;
-        padding: 5px 10px;
+        padding: ${props => props.theme.padding.pad_4};
         display: flex;
         justify-content: space-between;
         align-items: center;
         
         h3
         {
-            font-size: 1.5rem;
+            font-size: ${props => props.theme.font_size.size_3};
         }
 
         p
         {
-            font-size: 1.2rem;
+            font-size: ${props => props.theme.font_size.size_4};
         }
     }
 
     .type
     {
-        padding: 5px;
+        padding: ${props => props.theme.padding.pad_5};
         display: flex;
         gap: 1rem;
         
         p
         {
-            background: rgba(255,255,255, 0.25);
-            padding: 10px;
-            border-radius: 10px;
-            font-size: 1.2rem;
+            background: ${props => props.theme.colors.secundary};
+            padding: ${props => props.theme.padding.pad_4};
+            border-radius: ${props => props.theme.border.radius_2};
+            font-size: ${props => props.theme.font_size.size_4};
             
         }
     }
@@ -500,26 +500,26 @@ export const Content = styled.div`
 
     .boty
     {
-        background: #fff;
-        border-radius: 20px 20px 20px 20px;
+        background: ${props => props.theme.colors.background};
+        border-radius: ${props => props.theme.border.radius_1};
 
         .description
         {
-            padding: 10px 5px;
+            padding: ${props => props.theme.padding.pad_4};
             line-height: 25px;
 
             h3
             {
                 text-align: left;
-                padding: 10px;
-                font-size: 1.5rem;
+                padding: ${props => props.theme.padding.pad_4};
+                font-size: ${props => props.theme.font_size.size_3};
             }
 
             p
             {
                 text-align: center;
-                padding: 10px;
-                font-size: 1.2rem;
+                padding: ${props => props.theme.padding.pad_4};
+                font-size: ${props => props.theme.font_size.size_4};
             }
         }
 
@@ -543,37 +543,37 @@ export const Content = styled.div`
 
             p
             {
-                font-size: 1.2rem;
+                font-size: ${props => props.theme.font_size.size_4};
 
                 i
                 {
-                    font-size: .8rem;
+                    font-size: ${props => props.theme.font_size.size_6};
                 }
             }
 
             small
             {
-                font-size: .8rem;
+                font-size: ${props => props.theme.font_size.size_6};
             }
         }
 
 
         .features
         {
-            padding: 10px 5px;
-            margin: 10px 5px;
+            padding: ${props => props.theme.padding.pad_4};
+            margin: ${props => props.theme.margin.top_2};
 
             h3
             {
                 text-align: left;
-                padding: 10px;
-                font-size: 1.5rem;
+                padding: ${props => props.theme.padding.pad_4};
+                font-size: ${props => props.theme.font_size.size_3};
             }
             
             p
             {
-                padding: 10px;
-                font-size: 1.2rem;
+                padding: ${props => props.theme.padding.pad_4};
+                font-size: ${props => props.theme.font_size.size_4};
             }
 
             .mars i
@@ -611,21 +611,21 @@ export const Content = styled.div`
 
         .description2
         {
-            padding: 10px 5px;
+            padding: ${props => props.theme.padding.pad_4};
             line-height: 25px;
 
             h3
             {
                 text-align: left;
-                padding: 10px;
-                font-size: 1.5rem;
+                padding: ${props => props.theme.padding.pad_4};
+                font-size: ${props => props.theme.font_size.size_3};
             }
 
             p
             {
                 text-align: center;
-                padding: 10px;
-                font-size: 1.2rem;
+                padding: ${props => props.theme.padding.pad_4};
+                font-size: ${props => props.theme.font_size.size_4};
             }
 
         }
@@ -635,26 +635,26 @@ export const Content = styled.div`
         .boty
     {
         background: #fff;
-        border-radius: 20px 20px 20px 20px;
-        padding: 25px;
+        border-radius: ${props => props.theme.border.radius_1};
+        padding: ${props => props.theme.padding.pad_1};
 
         .description
         {
-            padding: 10px 5px;
+            padding: ${props => props.theme.padding.pad_4};
             line-height: 25px;
 
             h3
             {
                 text-align: left;
-                padding: 10px;
-                font-size: 3rem;
+                padding: ${props => props.theme.padding.pad_4};
+                font-size: ${props => props.theme.font_size.size_1};
             }
 
             p
             {
                 text-align: center;
-                padding: 10px;
-                font-size: 2rem;
+                padding: ${props => props.theme.padding.pad_4};
+                font-size: ${props => props.theme.font_size.size_2};
             }
         }
 
@@ -667,31 +667,31 @@ export const Content = styled.div`
 
             p
             {
-                font-size: 2rem;
+                font-size: ${props => props.theme.font_size.size_2};
             }
 
             small
             {
-                font-size: 1.2rem;
+                font-size: ${props => props.theme.font_size.size_4};
             }
         }
 
         .features
         {
-            padding: 10px 5px;
-            margin: 10px 5px;
+            padding: ${props => props.theme.padding.pad_4};
+            margin: ${props => props.theme.margin.top_2};
 
             h3
             {
                 text-align: left;
-                padding: 10px;
-                font-size: 3rem;
+                padding: ${props => props.theme.padding.pad_4};
+                font-size: ${props => props.theme.font_size.size_1};
             }
             
             p
             {
-                padding: 10px;
-                font-size: 2rem;
+                padding: ${props => props.theme.padding.pad_4};
+                font-size: ${props => props.theme.font_size.size_2};
             }
 
             div
@@ -719,21 +719,21 @@ export const Content = styled.div`
 
         .description2
         {
-            padding: 10px 5px;
+            padding: ${props => props.theme.padding.pad_4};
             line-height: 25px;
 
             h3
             {
                 text-align: left;
-                padding: 10px;
-                font-size: 3rem;
+                padding: ${props => props.theme.padding.pad_4};
+                font-size: ${props => props.theme.font_size.size_1};
             }
 
             p
             {
                 text-align: center;
-                padding: 10px;
-                font-size: 2rem;
+                padding: ${props => props.theme.padding.pad_4};
+                font-size: ${props => props.theme.font_size.size_2};
             }
 
             }

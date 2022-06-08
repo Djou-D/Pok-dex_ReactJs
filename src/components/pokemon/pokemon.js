@@ -151,7 +151,7 @@ const Pokemon = (props) => {
                 <div className="statsValue">
                 <p>{pokemon.stats[0].base_stat}</p>
                 </div>
-                <Progress progress={pokemon.stats[0].base_stat} />
+                <Progress bgColor="#FFA500" progress={pokemon.stats[0].base_stat} />
               </div>
               <div>
                 <div className="statsTitle">
@@ -160,7 +160,7 @@ const Pokemon = (props) => {
                 <div className="statsValue">
                 <p>{pokemon.stats[1].base_stat}</p>
                 </div>
-                <Progress progress={pokemon.stats[1].base_stat} />
+                <Progress bgColor="#FF8C00" progress={pokemon.stats[1].base_stat} />
               </div>
               <div>
                 <div className="statsTitle">
@@ -169,7 +169,7 @@ const Pokemon = (props) => {
                 <div className="statsValue">
                 <p>{pokemon.stats[2].base_stat}</p>
                 </div>
-                <Progress progress={pokemon.stats[2].base_stat} />
+                <Progress bgColor="#FFA500" progress={pokemon.stats[2].base_stat} />
               </div>
               <div>
                 <div className="statsTitle">
@@ -178,7 +178,7 @@ const Pokemon = (props) => {
                 <div className="statsValue">
                 <p>{pokemon.stats[3].base_stat}</p>
                 </div>
-                <Progress progress={pokemon.stats[3].base_stat} />
+                <Progress bgColor="#FF4500" progress={pokemon.stats[3].base_stat} />
               </div>
               <div>
                 <div className="statsTitle">
@@ -187,7 +187,7 @@ const Pokemon = (props) => {
                 <div className="statsValue">
                 <p>{pokemon.stats[4].base_stat}</p>
                 </div>
-                <Progress progress={pokemon.stats[4].base_stat} />
+                <Progress bgColor="#FF8C00" progress={pokemon.stats[4].base_stat} />
               </div>
               <div>
                 <div className="statsTitle">
@@ -196,7 +196,7 @@ const Pokemon = (props) => {
                 <div className="statsValue">
                 <p>{pokemon.stats[5].base_stat}</p>
                 </div>
-                <Progress progress={pokemon.stats[5].base_stat} />
+                <Progress bgColor="#FFA500" progress={pokemon.stats[5].base_stat} />
               </div>
               <div>
                 <div className="statsTitle">
@@ -205,21 +205,9 @@ const Pokemon = (props) => {
                 <div className="statsValue">
                   <p>{totalFeature}</p>
                 </div>
-                <Progress progress={totalFeature} />
+                <Progress bgColor="#FF4500" progress={totalFeature} />
               </div>
             </section>
-            {/* <section className="description2">
-              <h3>Pontos fortes e fracos</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum.
-              </p>
-            </section> */}
           </section>
           </Container>
         </InfoModal>
