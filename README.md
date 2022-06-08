@@ -17,26 +17,33 @@ Desenvolver uma plataforma web com o objetivo de listar e visualizar os fantást
 
 
 ## Conceitos abordados 
- *Consumo de api com o uso do fetch javascript.
+ * Consumo de api com o uso do fetch javascript.
 
- *Estilização dos componentes com styled components 
+ * Estilização dos componentes com styled components 
  
- *Uso de flexbox para alinhar e ajustar elementos na página.
+ * Uso de flexbox para alinhar e ajustar elementos na página.
 
- *Uso do media Queries para responsividade da aplicação
+ * Uso do media Queries para responsividade da aplicação
  
- *Controle de paginação na listagem dos pokémons e filtro por nome.
+ * Controle de paginação na listagem dos pokémons e filtro por nome.
 
- *Criação de rotas para acesso entre a pagina home e a pokédex.
+ * Criação de rotas para acesso entre a pagina home e a pokédex.
 
- *Uso do Themes com o ThemeProviders para criação de variaveis de estilização.
+ * Uso do Themes com o ThemeProviders para criação de variaveis de estilização.
 
 
 ## Tecnologias
-*React
-*Styled-components
-*React Router
-*javaScript
+* React  
+
+* Styled-components  
+
+* React Router  
+
+* JavaScript
+
+
+
+
 
 
 
