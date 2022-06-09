@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import LogoP from "../../assets/img/pokemon-logo-1.png";
+import LogoP from "../../assets/img/pokemon-logo.png";
 import AshP from "../../assets/img/Ash-Pokemon.png";
 import PikaP from "../../assets/img/pikachu.png";
 import * as S from "./styled";

@@ -37,7 +37,6 @@ export const Header = styled.nav`
         margin-right: ${props => props.theme.margin.left};
         padding: ${props => props.theme.padding.pad_4};
         letter-spacing: 1px;
-        text-decoration: none;
         overflow: hidden;
         transition: 0.5s;
     }

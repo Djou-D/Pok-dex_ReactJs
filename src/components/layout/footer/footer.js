@@ -1,7 +1,7 @@
 import React from "react";
 import { Container } from "./styled";
 
-import LogoP from "../../../assets/img/logoPokemon.png"
+import LogoP from "../../../assets/img/pokemon-logo.png"
 
 
 const Footer = () => {
