@@ -23,7 +23,7 @@ Desenvolver uma plataforma web com o objetivo de listar e visualizar os fantást
  
  * Uso de flexbox para alinhar e ajustar elementos na página.
 
- * Uso do media Queries para responsividade da aplicação
+ * Uso do media Query para responsividade da aplicação
  
  * Controle de paginação na listagem dos pokémons e filtro por nome.
 
@@ -33,7 +33,7 @@ Desenvolver uma plataforma web com o objetivo de listar e visualizar os fantást
 
 
 ## Tecnologias
-* React  
+* React Js  
 
 * Styled-components  
 
