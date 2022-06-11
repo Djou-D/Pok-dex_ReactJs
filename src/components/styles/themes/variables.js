@@ -20,6 +20,7 @@ export default {
     },
 
     font_size: {
+        size_0: '4rem',
         size_1: '3rem',
         size_2: '2rem',
         size_3: '1.5rem',

@@ -15,7 +15,74 @@ export const Modal = styled.div`
 `;
 
 export const Container = styled.section`
-    border-radius: ${props => props.theme.border.radius_1};;
+    border-radius: ${props => props.theme.border.radius_1};
+    display: flex;
+    height: 100vh;
+    
+    .header
+    {
+        width: 220%;
+    }
+
+    .name
+    {
+        width: 100%;
+        padding: ${props => props.theme.padding.pad_4};
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        align-items: flex-start;
+        
+        h3
+        {
+            font-size: ${props => props.theme.font_size.size_2};
+        }
+
+        p
+        {
+            font-size: ${props => props.theme.font_size.size_3};
+        }
+    }
+
+    .type
+    {
+        width: 100%;
+        height: 80%;
+        padding: ${props => props.theme.padding.pad_5};
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: flex-end;
+        gap: 2rem;
+        
+        p
+        {
+            width: 100px;
+            text-align: center;
+            background: ${props => props.theme.colors.secundary};
+            padding: ${props => props.theme.padding.pad_5};
+            border-radius: ${props => props.theme.border.radius_2};
+            font-size: ${props => props.theme.font_size.size_3};
+            margin-right: ${props => props.theme.margin.right};
+        }
+    }
+
+    .image
+    {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+
+        img
+        {
+            width: 400px;
+            position: absolute;
+            top: 25%;
+            z-index: 10;
+        }
+    }
 
 
   &.Normal 
@@ -111,71 +178,45 @@ export const Container = styled.section`
 
   @media screen and (min-width: 2560px){
     display: flex;
-    height: 90vh;
+    
     
     .header
     {
-        width: 100%;
+        width: 200%;
     }
 
     .name
     {
-        width: 100%;
-        padding: ${props => props.theme.padding.pad_4};;
-        display: flex;
-        flex-direction: column;
-        gap: 2rem;
-        align-items: flex-start;
+        padding: ${props => props.theme.padding.pad_2};
         
         h3
         {
-            font-size: ${props => props.theme.font_size.size_1};
+            font-size: ${props => props.theme.font_size.size_0};
         }
 
         p
         {
-            font-size: ${props => props.theme.font_size.size_2};
+            font-size: ${props => props.theme.font_size.size_1};
         }
     }
 
     .type
     {
-        width: 100%;
-        height: 80%;
-        padding: ${props => props.theme.padding.pad_5};
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        justify-content: flex-end;
-        gap: 2rem;
         
         p
         {
-            width: 100px;
-            text-align: center;
-            background: ${props => props.theme.colors.secundary};
+            width: 250px;
             padding: ${props => props.theme.padding.pad_5};
-            border-radius: ${props => props.theme.border.radius_2};
-            font-size: ${props => props.theme.font_size.size_3};
-            margin-right: ${props => props.theme.margin.right};
-            
+            font-size: ${props => props.theme.font_size.size_1};            
         }
     }
 
     .image
     {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        
-
         img
         {
-            width: 800px;
-            position: absolute;
-            top: 25%;
-            z-index: 10;
+            width: 900px;
+            top: 20%;
         }
     }
   }
@@ -183,262 +224,82 @@ export const Container = styled.section`
 
 
   @media screen and (min-width: 1440px) and (max-width: 2559px){
-    display: flex;
-    height: 100vh;
-    .header
-    {
-        width: 220%;
-    }
-
-    .name
-    {
-        width: 100%;
-        padding: ${props => props.theme.padding.pad_4};
-        display: flex;
-        flex-direction: column;
-        gap: 2rem;
-        align-items: flex-start;
-        
-        h3
-        {
-            font-size: ${props => props.theme.font_size.size_2};
-        }
-
-        p
-        {
-            font-size: ${props => props.theme.font_size.size_3};
-        }
-    }
-
-    .type
-    {
-        width: 100%;
-        height: 80%;
-        padding: ${props => props.theme.padding.pad_5};
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        justify-content: flex-end;
-        gap: 2rem;
-        
-        p
-        {
-            width: 100px;
-            text-align: center;
-            background: ${props => props.theme.colors.secundary};
-            padding: ${props => props.theme.padding.pad_5};
-            border-radius: ${props => props.theme.border.radius_2};
-            font-size: ${props => props.theme.font_size.size_3};
-            margin-right: ${props => props.theme.margin.right};
-            
-        }
-    }
-
     .image
     {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        
-
         img
         {
             width: 600px;
-            position: absolute;
             top: 15%;
-            z-index: 10;
         }
     }
     
   }
 
-  @media screen and (min-width: 1024px) and (max-width: 1439px) {
-    display: flex;
-    
+  @media screen and (max-width: 1023px) {
+    display: block;
+
     .header
     {
-        width: 220%;
+        width: 100%;
+        height: 200px;
     }
 
     .name
     {
-        width: 100%;
-        padding: ${props => props.theme.padding.pad_4};
         display: flex;
-        flex-direction: column;
-        gap: 2rem;
-        align-items: flex-start;
-        
-        h3
-        {
-            font-size: ${props => props.theme.font_size.size_2};
-        }
-
-        p
-        {
-            font-size: ${props => props.theme.font_size.size_3};
-        }
+        flex-direction: row;
+        justify-content: space-between;
     }
 
     .type
     {
-        width: 100%;
-        height: 80%;
-        padding: ${props => props.theme.padding.pad_5};
         display: flex;
         flex-direction: column;
-        align-items: flex-end;
-        justify-content: flex-end;
-        gap: 2rem;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 1rem;
         
         p
         {
-            width: 100px;
+            width: 80px;
             text-align: center;
-            background: ${props => props.theme.colors.secundary};
-            padding: ${props => props.theme.padding.pad_5};
-            border-radius: ${props => props.theme.border.radius_2};
-            font-size: ${props => props.theme.font_size.size_3};
-            margin-right: ${props => props.theme.margin.right};
+            margin-left: 10px;
         }
     }
 
     .image
     {
-        width: 100%;
         display: flex;
         justify-content: center;
-        align-items: center;
         
-
         img
         {
-            width: 400px;
+            width: 190px;
             position: absolute;
-            top: 25%;
+            left: 40%;
+            top: 10%;
             z-index: 10;
         }
     }
+
   }
 
   @media screen and (min-width: 768px) and (max-width: 1023px) {
     .header
     {
-        height: 220px;
-    }
-
-    .name
-    {
-        width: 100%;
-        padding: ${props => props.theme.padding.pad_4};
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        
-        h3
-        {
-            font-size: ${props => props.theme.font_size.size_3};
-        }
-
-        p
-        {
-            font-size: ${props => props.theme.font_size.size_4};
-        }
-    }
-
-    .type
-    {
-        padding: ${props => props.theme.padding.pad_5};
-        display: flex;
-        gap: 1rem;
-        
-        p
-        {
-            background: ${props => props.theme.colors.secundary};
-            padding: ${props => props.theme.padding.pad_4};
-            border-radius: ${props => props.theme.border.radius_2};
-            font-size: ${props => props.theme.font_size.size_4};
-            
-        }
+        height: 250px;
     }
 
     .image
-    {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        
-
+    { 
         img
         {
-            width: 200px;
-            position: absolute;
-            top: 10%;
-            z-index: 10;
+            width: 280px;
+            top: 8%;
+            left: 33%;
         }
     }
   }
-
-
-  @media screen and (max-width: 767px) {
-    .header
-    {
-        height: 220px;
-    }
-
-    .name
-    {
-        width: 100%;
-        padding: ${props => props.theme.padding.pad_4};
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        
-        h3
-        {
-            font-size: ${props => props.theme.font_size.size_3};
-        }
-
-        p
-        {
-            font-size: ${props => props.theme.font_size.size_4};
-        }
-    }
-
-    .type
-    {
-        padding: ${props => props.theme.padding.pad_5};
-        display: flex;
-        gap: 1rem;
-        
-        p
-        {
-            background: ${props => props.theme.colors.secundary};
-            padding: ${props => props.theme.padding.pad_4};
-            border-radius: ${props => props.theme.border.radius_2};
-            font-size: ${props => props.theme.font_size.size_4};
-            
-        }
-    }
-
-    .image
-    {
-        display: flex;
-        justify-content: center;
-        
-        img
-        {
-            width: 180px;
-            position: absolute;
-            top: 10%;
-            z-index: 10;
-        }
-    }
-
-  }
-  
     
 `;
 
@@ -607,140 +468,82 @@ export const Content = styled.div`
 
         }
 
-        .description2
-        {
-            padding: ${props => props.theme.padding.pad_4};
-            line-height: 25px;
-
-            h3
-            {
-                text-align: left;
-                padding: ${props => props.theme.padding.pad_4};
-                font-size: ${props => props.theme.font_size.size_3};
-            }
-
-            p
-            {
-                text-align: center;
-                padding: ${props => props.theme.padding.pad_4};
-                font-size: ${props => props.theme.font_size.size_4};
-            }
-
-        }
     }
 
-    @media screen and (min-width: 2560px){
+    @media screen and (min-width: 1444px){
         .boty
-    {
-        background: #fff;
-        border-radius: ${props => props.theme.border.radius_1};
-        padding: ${props => props.theme.padding.pad_1};
-
-        .description
         {
-            padding: ${props => props.theme.padding.pad_4};
-            line-height: 25px;
+            padding: ${props => props.theme.padding.pad_1};
 
-            h3
+            .description
             {
-                text-align: left;
-                padding: ${props => props.theme.padding.pad_4};
-                font-size: ${props => props.theme.font_size.size_1};
-            }
+                padding: ${props => props.theme.padding.pad_2};
+                line-height: 45px;
 
-            p
-            {
-                text-align: center;
-                padding: ${props => props.theme.padding.pad_4};
-                font-size: ${props => props.theme.font_size.size_2};
-            }
-        }
-
-        .info
-        {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            text-align: center;
-
-            p
-            {
-                font-size: ${props => props.theme.font_size.size_2};
-            }
-
-            small
-            {
-                font-size: ${props => props.theme.font_size.size_4};
-            }
-        }
-
-        .features
-        {
-            padding: ${props => props.theme.padding.pad_4};
-            margin: ${props => props.theme.margin.top_2};
-
-            h3
-            {
-                text-align: left;
-                padding: ${props => props.theme.padding.pad_4};
-                font-size: ${props => props.theme.font_size.size_1};
-            }
-            
-            p
-            {
-                padding: ${props => props.theme.padding.pad_4};
-                font-size: ${props => props.theme.font_size.size_2};
-            }
-
-            div
-            {
-                display: flex;
-                align-items: center;
-
-
-                .statsTitle
+                h3
                 {
-                    width: 180px;
+                    padding: ${props => props.theme.padding.pad_2};
+                    font-size: ${props => props.theme.font_size.size_0};
+                }
+
+                p
+                {
                     text-align: center;
+                    padding: ${props => props.theme.padding.pad_2};
+                    font-size: ${props => props.theme.font_size.size_1};
                 }
+            }
 
-                .statsValue
+            .info
+            {
+                p
                 {
-                    width: 70px;
-                    
+                    font-size: ${props => props.theme.font_size.size_1};
                 }
-                
+
+                small
+                {
+                    font-size: ${props => props.theme.font_size.size_3};
+                }
             }
 
-
-        }
-
-        .description2
-        {
-            padding: ${props => props.theme.padding.pad_4};
-            line-height: 25px;
-
-            h3
+            .features
             {
-                text-align: left;
-                padding: ${props => props.theme.padding.pad_4};
-                font-size: ${props => props.theme.font_size.size_1};
-            }
+                padding: ${props => props.theme.padding.pad_2};
+                margin-top: ${props => props.theme.margin.left};
 
-            p
-            {
-                text-align: center;
-                padding: ${props => props.theme.padding.pad_4};
-                font-size: ${props => props.theme.font_size.size_2};
-            }
+                h3
+                {
+                    padding: ${props => props.theme.padding.pad_2};
+                    font-size: ${props => props.theme.font_size.size_0};
+                }
 
+                p
+                {
+                    padding: ${props => props.theme.padding.pad_2};
+                    font-size: ${props => props.theme.font_size.size_1};
+                }
+
+                div
+                {
+
+                    .statsTitle
+                    {
+                        width: 300px;
+                    }
+
+                    .statsValue
+                    {
+                        width: 200px;
+
+                    }
+                }
             }
         }
     }
 
     @media screen and (min-width: 1024px) and (max-width: 1439px) {
         width: 100%;
-            
     }
 
 
