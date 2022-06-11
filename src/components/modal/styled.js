@@ -3,14 +3,14 @@ import styled from "styled-components"
 export const Modal = styled.div`
     position: absolute;
     width: 100%;
-    background: rgba(0, 0, 0, .8);
+    height: 105vh;
     top: 0;
     left: 0;
     z-index: 11;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: ${props => props.theme.padding.pad_1};
+    padding: ${props => props.theme.padding.pad_5};
 
 `;
 
@@ -18,6 +18,8 @@ export const Container = styled.section`
     border-radius: ${props => props.theme.border.radius_1};
     display: flex;
     height: 100vh;
+    width: 100%;
+    margin-bottom: ${props => props.theme.margin.top};
     
     .header
     {
@@ -317,6 +319,7 @@ export const Close = styled.button`
     top: 5px;
     display: flex;
     padding: ${props => props.theme.padding.pad_4};
+    z-index: 100;
 
     &:before,
     &:after
@@ -470,7 +473,7 @@ export const Content = styled.div`
 
     }
 
-    @media screen and (min-width: 1444px){
+    @media screen and (min-width: 2060px){
         .boty
         {
             padding: ${props => props.theme.padding.pad_1};
@@ -540,10 +543,6 @@ export const Content = styled.div`
                 }
             }
         }
-    }
-
-    @media screen and (min-width: 1024px) and (max-width: 1439px) {
-        width: 100%;
     }
 
 
