@@ -8,7 +8,7 @@ import PokeLoading from "../../assets/gif/pokebola-pikachu.gif";
 import { LoadingPosition } from "../styles/loading-style";
 
 const Pokedex = (props) => {
-    const {pokemons, loading, page, setPage, totalPage} = props;
+    const {description, pokemons, loading, page, setPage, totalPage} = props;
 
     //metodos da paginação para trocar de paginas
     const onLeftClickHandle = () => {
@@ -24,7 +24,6 @@ const Pokedex = (props) => {
             setPage(page + 1);
         }
     }
-
 
     return (
         <S.Container>
@@ -44,8 +43,14 @@ const Pokedex = (props) => {
             ) : (
                 <S.CardPosition>
                     {pokemons && pokemons.map((pokemon, index) => {
-                        return (< Pokemon pokemon={pokemon} key={index} />)
+                        return (< Pokemon 
+                                pokemon={pokemon} 
+                                description={description}  
+                                key={index} 
+                                />)
                     })}
+                    
+                    
                 </S.CardPosition>
             )}
         </S.Container>

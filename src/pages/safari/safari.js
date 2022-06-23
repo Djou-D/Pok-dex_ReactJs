@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { searchPokemon, getPokemons, getPokemonData } from "../../services/api";
+import { searchPokemon, getPokemons, getPokemonData, getDescription, getDescriptionData } from "../../services/api";
 import Header from "../../components/layout/header";
 import Footer from "../../components/layout/footer";
 import Search from "../../components/search";
@@ -8,6 +8,7 @@ import Pokedex from "../../components/pokedex";
 import { ContainerNotFound } from "../../components/styles/not-found-styled";
 
 const catcherKey = "catcher";
+
 const Safari = () => {
   const [loading, setLoading] = useState(false);
   const [notFound, setNotFound] = useState(false);
@@ -19,6 +20,8 @@ const Safari = () => {
   const [totalPage, setTotalPage] = useState(0);
   const itensPerPage = 24;
 
+  const [descript, setDescript] = useState([]);
+
   //listagem de pokémons e paginação
   const fetchPokemon = async () => {
     try {
@@ -28,15 +31,45 @@ const Safari = () => {
       const promised = data.results.map(async (pokemon) => {
         return await getPokemonData(pokemon.url);
       });
+
       const result = await Promise.all(promised); //resultado recebe a promessa de retorno da API
 
       setPokemons(result);
       setLoading(false);
       setTotalPage(Math.ceil(data.count / itensPerPage));
+
     } catch (error) {
       console.log("Erro em fetchPokemon: ", error);
     }
   };
+
+  const fetchDescription = async () => {
+    try
+    {
+      const data = await getDescription(pokemons);
+      const promised = data.results.map(async (pokemon) => {
+        return await getDescriptionData(pokemon.url);
+      });
+
+      const result = await Promise.all(promised);
+      
+      let description = result.map((desc) => {
+        for(let i = 0; i <= 52; i++){
+          if(desc.flavor_text_entries[i].language.name === "en"){
+            return  desc.flavor_text_entries[i].flavor_text
+          }
+        }
+        return desc;
+      });
+      // console.log(result);
+      setDescript(description);
+    }
+    catch (error)
+    {
+      console.log("Erro em fetchDescription: ", error);
+    }
+  }
+
 
   //retornar a capitura do pokémon no localStorage.
   const loadCatchePokemons = () => {
@@ -45,6 +78,7 @@ const Safari = () => {
   };
 
   //inicia ao renderizar a pagina
+  /*eslint-disable*/
   useEffect(() => {
     loadCatchePokemons();
   }, []);
@@ -53,7 +87,9 @@ const Safari = () => {
   /*eslint-disable*/
   useEffect(() => {
     fetchPokemon();
+    fetchDescription();
   }, [page]);
+
 
   //metodos para armazenar a capitura do pokémon no localStorage
   const updateCatchPokemons = (name) => {
@@ -105,7 +141,8 @@ const Safari = () => {
             <p>Huuum! Esse não passou por aqui!</p>
           </ContainerNotFound>
         ) : (
-          <Pokedex
+    <Pokedex
+            description={descript}
             pokemons={pokemons}
             loading={loading}
             page={page}

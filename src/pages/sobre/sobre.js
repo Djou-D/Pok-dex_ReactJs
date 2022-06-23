@@ -90,12 +90,12 @@ const Sobre = () => {
             <h2 className="heading">Sobre o Dev</h2>
             <p className="text">
               Eu sou Dionatam Lima, mas estou Djou rsrsr, sou o responsavel por
-              desenvolver essa aplicação linda <span><i class="fa fa-heart" aria-hidden="true"></i></span><br /> Essa foi a minha primeira
+              desenvolver essa aplicação linda <span><i className="fa fa-heart" aria-hidden="true"></i></span><br /> Essa foi a minha primeira
               experiência com ReactJs e devo dizer que me apoixoinei por essa biblioteca
               e sua comunidade... <br /> Pois bem, eu tenho formação em
               Logística e estou em processo de transição de carreira, aprendendo
               a cada dia. <br /> Estou desbravando esse multiverso insano que é o mundo
-              da programação <span><i class="fa fa-rocket" aria-hidden="true"></i>
+              da programação <span><i className="fa fa-rocket" aria-hidden="true"></i>
 </span>.
             </p>
           </div>
@@ -107,13 +107,13 @@ const Sobre = () => {
             <div>
               <h3>Linkedin</h3>
               <a href="https://www.linkedin.com/in/dionatam-lima-silva/" target="_blank" rel="noreferrer">
-                <i class="fa fa-linkedin" aria-hidden="true"></i>
+                <i className="fa fa-linkedin" aria-hidden="true"></i>
               </a>
             </div>
             <div>
               <h3>GitHub</h3>
               <a href="https://github.com/Djou-D" target="_blank" rel="noreferrer">
-                <i class="fa fa-github" aria-hidden="true"></i>
+                <i className="fa fa-github" aria-hidden="true"></i>
               </a>
             </div>
           </div>

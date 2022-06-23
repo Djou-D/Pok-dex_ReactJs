@@ -11,7 +11,7 @@ import { Container } from "../modal/styled";
 
 const Pokemon = (props) => {
   const { catchPokemons, updateCatchPokemons } = React.useContext(Catcher);
-  const { pokemon } = props;
+  const { description, pokemon } = props;
   const [isModal, setIsModal] = React.useState(false);
 
   const onCatchPokemon = () => {
@@ -23,6 +23,8 @@ const Pokemon = (props) => {
     (type) => type.type.name[0].toUpperCase() + type.type.name.slice(1)
   );
 
+
+  // Metodo para bloquear a tela aoo abrir o modal
   const overflow = document.getElementById('root');
   const openModal = () => {
     setIsModal(true);
@@ -112,20 +114,26 @@ const Pokemon = (props) => {
           <section className="boty">
             <div className="description">
               <h3>Descrição</h3>
-              <p>
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+
+              {description.map((desc, key) => {
+                return <p key={key}>{desc}</p>
+              })}
+
+              {/* <p> */}
+                {/* {description} */}
+                {/* "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
-              </p>
+                nisi ut aliquip ex ea commodo consequat. */}
+              {/* </p> */}
             </div>
             <section className="info">
               <div>
-                <p><i class="fa fa-anchor" aria-hidden="true"></i> {pokemon.weight / 10}</p>
+                <p><i className="fa fa-anchor" aria-hidden="true"></i> {pokemon.weight / 10}</p>
                 <small>Peso</small>
               </div>
               <div>
-                <p><i class="fa fa-arrows-v" aria-hidden="true"></i> {pokemon.height / 10}</p>
+                <p><i className="fa fa-arrows-v" aria-hidden="true"></i> {pokemon.height / 10}</p>
                 <small>Altura</small>
               </div>
               <div>
@@ -140,9 +148,9 @@ const Pokemon = (props) => {
                   <p>Gênero</p>
                 </div>
                 <div className="statsValue">
-                <p className="mars"><i class="fa fa-mars" aria-hidden="true"></i></p>
+                <p className="mars"><i className="fa fa-mars" aria-hidden="true"></i></p>
                 </div>
-                <p className="venus"><i class="fa fa-venus" aria-hidden="true"></i></p>
+                <p className="venus"><i className="fa fa-venus" aria-hidden="true"></i></p>
               </div>
               <div>
                 <div className="statsTitle">

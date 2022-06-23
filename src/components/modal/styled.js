@@ -181,7 +181,7 @@ export const Container = styled.section`
   @media screen and (min-width: 2560px){
     display: flex;
     
-    
+    width: 100%;
     .header
     {
         width: 200%;
@@ -226,6 +226,7 @@ export const Container = styled.section`
 
 
   @media screen and (min-width: 1440px) and (max-width: 2559px){
+    width: 135%;
     .image
     {
         img
@@ -235,6 +236,14 @@ export const Container = styled.section`
         }
     }
     
+  }
+
+  @media screen and (min-width: 1300px) and (max-width: 1439px) {
+    width: 125%;
+  }
+
+  @media screen and (min-width: 1024px) and (max-width: 1299px) {
+    width: 100%;
   }
 
   @media screen and (max-width: 1023px) {

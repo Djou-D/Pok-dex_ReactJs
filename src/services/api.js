@@ -39,3 +39,29 @@ export const getPokemonData = async (url) => {
         console.log("O erro foi: ", error);
     }
 }
+
+export const getDescription = async (pokemon) => {
+    try
+    {
+        let url = `https://pokeapi.co/api/v2/pokemon-species/${pokemon}`;
+        const response = await fetch(url);
+       
+        return response.json();
+    }
+    catch (error)
+    {
+        console.log("Erro do getDescription: " + error);
+    }
+}
+
+export const getDescriptionData = async (url) => {
+    try
+    {
+        const response = await fetch(url);
+        return response.json();
+    }
+    catch (error)
+    {
+        console.log("O erro foi: ", error);
+    }
+}
